@@ -32,7 +32,7 @@ export const WhoopConnect = () => {
               : 'bg-gray-300 text-gray-600 cursor-not-allowed'
           }`}
         >
-          {whoopConnection ? 'Disconnect' : 'Coming Soon'}
+          {whoopConnection ? 'Disconnect' : 'Connect'}
         </button>
       </div>
     </div>
