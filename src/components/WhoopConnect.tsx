@@ -5,11 +5,6 @@ import { useStore } from '../store/useStore';
 export const WhoopConnect = () => {
   const { whoopConnection, setWhoopConnection } = useStore();
 
-  const handleConnect = async () => {
-    // TODO: Implement Whoop OAuth flow
-    console.log('Connecting to Whoop...');
-  };
-
   const handleDisconnect = async () => {
     setWhoopConnection(null);
   };
@@ -20,7 +15,7 @@ export const WhoopConnect = () => {
         <div className="flex items-center space-x-3">
           <Activity className="w-8 h-8 text-[#2d8059]" />
           <div>
-            <h2 className="text-lg font-semibold">Whoop Connection</h2>
+            <h2 className="text-lg font-semibold">Whoop Connection <span className="text-sm font-normal text-gray-500">(coming soon)</span></h2>
             <p className="text-sm text-gray-600">
               {whoopConnection
                 ? 'Connected to Whoop'
@@ -29,14 +24,15 @@ export const WhoopConnect = () => {
           </div>
         </div>
         <button
-          onClick={whoopConnection ? handleDisconnect : handleConnect}
+          onClick={whoopConnection ? handleDisconnect : undefined}
+          disabled={!whoopConnection}
           className={`px-4 py-2 rounded-full text-sm font-medium ${
             whoopConnection
               ? 'bg-red-100 text-red-600 hover:bg-red-200'
-              : 'bg-[#2d8059] text-white hover:bg-[#1f5c40]'
+              : 'bg-gray-300 text-gray-600 cursor-not-allowed'
           }`}
         >
-          {whoopConnection ? 'Disconnect' : 'Connect Whoop'}
+          {whoopConnection ? 'Disconnect' : 'Coming Soon'}
         </button>
       </div>
     </div>
