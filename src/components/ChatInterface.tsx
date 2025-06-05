@@ -16,7 +16,7 @@ const GENERIC_STARTERS = [
   "How can I improve my sleep while caring for my baby?"
 ];
 
-const DELIVERY_DATE_PROMPT = "My baby was born on YYYY-MM-DD";
+const DELIVERY_DATE_PROMPT = "My baby was delivered on YYYY-MM-DD";
 const SLEEP_PROMPT = "How can I improve my sleep while caring for my baby?";
 const ACTIVITY_PROMPT = "When is it safe to start exercising postpartum?";
 const HRV_PROMPT = "Is my heart rate variability normal for postpartum?";
@@ -309,8 +309,8 @@ export const ChatInterface = () => {
       {/* Centered suggestions for initial load */}
       {messages.length === 0 && suggestions.length > 0 ? (
         <div className="fixed inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
-          <div className="bg-white/90 rounded-xl shadow-lg px-10 py-8 border border-green-200 flex flex-col items-center max-w-lg w-full pointer-events-auto">
-            <h2 className="mb-4 text-xl font-semibold text-[#2d8059]">Try asking about...</h2>
+          <div className="bg-white/90 px-10 py-8 flex flex-col items-center max-w-lg w-full pointer-events-auto" data-component-name="ChatInterface">
+            <h2 className="mb-4 text-xl font-semibold text-[#2d8059]" data-component-name="ChatInterface">Try getting started by asking...</h2>
             <div className="flex flex-wrap gap-3 justify-center">
               {suggestions.map((suggestion, idx) => {
                 const words = suggestion.split(' ');
