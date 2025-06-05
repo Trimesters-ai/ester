@@ -4,6 +4,7 @@ import { WhoopConnect } from './components/WhoopConnect';
 import { UserProfile } from './components/UserProfile';
 import { useStore } from './store/useStore';
 import { MessageCircle, User } from 'lucide-react';
+import logo from './assets/images/ester-logo.png';
 
 function App() {
   const { user } = useStore();
@@ -106,7 +107,7 @@ function App() {
             {/* Logo on the left */}
             <a href="#" className="flex items-center justify-center sm:justify-start min-w-0 mx-auto sm:mx-0 h-10">
               <img 
-                src="/assets/images/ester-logo.png" 
+                src={logo} 
                 alt="Ester Logo" 
                 className="h-full w-auto object-contain"
               />
