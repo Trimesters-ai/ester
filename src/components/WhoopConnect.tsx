@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Activity } from 'lucide-react';
 import { useStore } from '../store/useStore';
 
@@ -18,7 +18,7 @@ export const WhoopConnect = () => {
     <div className="bg-white rounded-lg shadow-lg p-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          <Activity className="w-8 h-8 text-purple-600" />
+          <Activity className="w-8 h-8 text-[#2d8059]" />
           <div>
             <h2 className="text-lg font-semibold">Whoop Connection</h2>
             <p className="text-sm text-gray-600">
@@ -33,7 +33,7 @@ export const WhoopConnect = () => {
           className={`px-4 py-2 rounded-full text-sm font-medium ${
             whoopConnection
               ? 'bg-red-100 text-red-600 hover:bg-red-200'
-              : 'bg-purple-600 text-white hover:bg-purple-700'
+              : 'bg-[#2d8059] text-white hover:bg-[#1f5c40]'
           }`}
         >
           {whoopConnection ? 'Disconnect' : 'Connect Whoop'}

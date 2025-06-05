@@ -231,12 +231,12 @@ export const ChatInterface = () => {
       {/* Scroll-to-bottom icon: semi-transparent, only when needed */}
       {showScrollDown && messages.length > 0 && (
         <button
-          className="fixed bottom-28 right-6 z-30 bg-white/60 rounded-full p-3 shadow-lg border border-purple-200 transition-all duration-200 backdrop-blur-sm opacity-50 hover:opacity-90"
+          className="fixed bottom-28 right-6 z-30 bg-white/60 rounded-full p-3 shadow-lg border border-green-200 transition-all duration-200 backdrop-blur-sm opacity-50 hover:opacity-90"
           style={{ boxShadow: '0 4px 16px rgba(80,0,120,0.10)' }}
           onClick={scrollToBottom}
           aria-label="Scroll to bottom"
         >
-          <ChevronDown className="w-7 h-7 text-purple-700" />
+          <ChevronDown className="w-7 h-7 text-[#2d8059]" />
         </button>
       )}
       {/* Message thread area: fixed height, scrollable */}
@@ -256,13 +256,13 @@ export const ChatInterface = () => {
             <div
               className={`max-w-[80%] rounded-lg p-3 shadow-sm transform transition-all duration-200 hover:scale-[1.01] ${
                 message.isAI
-                  ? 'bg-purple-100 text-purple-900'
+                  ? 'bg-[#e8f5e9] text-[#2d8059]'
                   : 'bg-blue-100 text-blue-900'
               }`}
             >
               {message.isAI ? (
                 <ReactMarkdown
-                  className="prose prose-sm max-w-none text-purple-900"
+                  className="prose prose-sm max-w-none text-[#2d8059]"
                   components={{
                     p: ({ children }) => <p style={{ marginBottom: '1.25em' }}>{children}</p>,
                     br: () => <br style={{ marginBottom: '0.5em' }} />,
@@ -309,8 +309,8 @@ export const ChatInterface = () => {
       {/* Centered suggestions for initial load */}
       {messages.length === 0 && suggestions.length > 0 ? (
         <div className="fixed inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
-          <div className="bg-white/90 rounded-xl shadow-lg px-10 py-8 border border-purple-200 flex flex-col items-center max-w-lg w-full pointer-events-auto">
-            <h2 className="mb-4 text-xl font-semibold text-purple-900">Try asking about...</h2>
+          <div className="bg-white/90 rounded-xl shadow-lg px-10 py-8 border border-green-200 flex flex-col items-center max-w-lg w-full pointer-events-auto">
+            <h2 className="mb-4 text-xl font-semibold text-[#2d8059]">Try asking about...</h2>
             <div className="flex flex-wrap gap-3 justify-center">
               {suggestions.map((suggestion, idx) => {
                 const words = suggestion.split(' ');
@@ -320,7 +320,7 @@ export const ChatInterface = () => {
                     key={idx}
                     type="button"
                     onClick={() => handleStarterClick(suggestion)}
-                    className="p-3 px-6 bg-purple-50 hover:bg-purple-100 rounded-full text-base text-purple-900 border border-purple-200 transition-colors duration-200 ease-in-out shadow-md font-medium"
+                    className="p-3 px-6 bg-[#f1f8e9] hover:bg-[#e8f5e9] rounded-full text-base text-[#2d8059] border border-green-200 transition-colors duration-200 ease-in-out shadow-md font-medium"
                     style={{ marginBottom: 6 }}
                     title={suggestion}
                   >
@@ -342,7 +342,7 @@ export const ChatInterface = () => {
                   key={idx}
                   type="button"
                   onClick={() => handleStarterClick(suggestion)}
-                  className="p-2 px-4 bg-purple-50 hover:bg-purple-100 rounded-full text-sm text-purple-900 border border-purple-200 transition-colors duration-200 ease-in-out shadow-sm"
+                  className="p-2 px-4 bg-[#f1f8e9] hover:bg-[#e8f5e9] rounded-full text-sm text-[#2d8059] border border-green-200 transition-colors duration-200 ease-in-out shadow-sm"
                   style={{ marginBottom: 4 }}
                   title={suggestion}
                 >
@@ -366,14 +366,14 @@ export const ChatInterface = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type your message..."
-              className="flex-1 rounded-full px-5 py-3 border-2 border-purple-200 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-200 shadow-sm text-gray-800 placeholder-gray-500"
+              className="flex-1 rounded-full px-5 py-3 border-2 border-green-200 focus:outline-none focus:ring-2 focus:ring-[#bcc547] focus:border-[#bcc547] transition-all duration-200 shadow-sm text-gray-800 placeholder-gray-500"
               disabled={isLoading}
               autoFocus
             />
             <button
               type="submit"
               disabled={isLoading || !input.trim()}
-              className="bg-purple-600 text-white rounded-full p-3 hover:bg-purple-700 disabled:opacity-50 transition-colors duration-200 hover:shadow-md"
+              className="bg-[#2d8059] text-white rounded-full p-3 hover:bg-[#1f5c40] disabled:opacity-50 transition-colors duration-200 hover:shadow-md"
             >
               {isLoading ? (
                 <Loader2 className="w-5 h-5 animate-spin" />
