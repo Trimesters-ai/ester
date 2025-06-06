@@ -36,6 +36,9 @@ export async function streamOpenAIChat({
     input += (m.isAI ? 'Assistant: ' : 'User: ') + m.content + '\n';
   }
 
+  // Get commit ID from environment variables
+  const commitId = import.meta.env.VITE_COMMIT_ID || 'local-development';
+
   const response = await fetch(OPENAI_API_URL, {
     method: 'POST',
     headers: {
@@ -47,7 +50,10 @@ export async function streamOpenAIChat({
       input,
       instructions: INSTRUCTIONS,
       temperature,
-      stream: true
+      stream: true,
+      metadata: {
+        commit: commitId
+      }
     })
   });
 
