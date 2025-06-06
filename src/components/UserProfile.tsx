@@ -92,6 +92,9 @@ export const UserProfile = () => {
         <p className="text-xs text-gray-500 mt-1">
           Your API key is stored only in your browser and used for your chat sessions. <a href="https://platform.openai.com/account/api-keys" target="_blank" rel="noopener noreferrer" className="underline">Get your key</a>.
         </p>
+        <p className="text-xs text-gray-500 mt-2">
+          Current AI model: <span className="font-medium">GPT-4o</span>
+        </p>
       </div>
     </div>
   );
