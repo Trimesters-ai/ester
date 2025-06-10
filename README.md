@@ -5,11 +5,23 @@
 [![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA-blue)](https://www.w3.org/TR/WCAG21/)
 [![Digital Public Good](https://img.shields.io/badge/Digital_Public_Good-✓-brightgreen)](https://digitalpublicgoods.net/)
 
-<div align="center">
+<div align="center" style="margin: 2rem 0;">
   <a href="https://ester.chat" target="_blank">
-    <img src="assets/images/ester-screenshot-chat.png" alt="Ester Chat Interface" width="800">
+    <img 
+      src="assets/images/ester-screenshot-chat.png" 
+      alt="Ester Chat Interface" 
+      style="
+        width: 80%;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      "
+      onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0, 0, 0, 0.15), 0 10px 20px rgba(0, 0, 0, 0.1)';"
+      onmouseout="this.style.transform=''; this.style.boxShadow='0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05)';"
+    >
   </a>
-  <p><em>Empowering maternal health through open-source AI technology</em></p>
+  <p style="margin-top: 1.5rem;"><em>Empowering maternal health through open-source AI technology</em></p>
 </div>
 
 ## 🌟 About Ester
