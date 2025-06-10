@@ -1,9 +1,14 @@
 # 🤱 Ester: Your AI Maternal Health Companion
 
+<div align="center">
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA-blue)](https://www.w3.org/TR/WCAG21/)
 [![Digital Public Good](https://img.shields.io/badge/Digital_Public_Good-✓-brightgreen)](https://digitalpublicgoods.net/)
+[![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/Trimesters-ai/Ester?utm_source=oss&utm_medium=github&utm_campaign=Trimesters-ai%2FEster&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)](https://coderabbit.ai)
+
+</div>
 
 ## 🌟 About Ester
 
