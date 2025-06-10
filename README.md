@@ -5,7 +5,17 @@
 [![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA-blue)](https://www.w3.org/TR/WCAG21/)
 [![Digital Public Good](https://img.shields.io/badge/Digital_Public_Good-✓-brightgreen)](https://digitalpublicgoods.net/)
 
-<div align="center" style="margin: 2rem 0;">
+## 🌟 About Ester
+
+Ester is an open-source AI companion designed to support individuals through all stages of maternal health. Starting with postpartum recovery, Ester provides personalized guidance by integrating with health wearables and offering evidence-based support.
+
+**Why Ester?**
+- 🤰 **Comprehensive Care**: From pregnancy to postpartum and beyond
+- 🔒 **Privacy-First**: Your health data stays yours
+- 🌍 **Accessible**: Designed for everyone, everywhere
+- 🤖 **AI-Powered**: Evidence-based, personalized support
+
+<div align="center" style="margin: 2.5rem 0;">
   <a href="https://ester.chat" target="_blank">
     <img 
       src="assets/images/ester-screenshot-chat.png" 
@@ -21,18 +31,8 @@
       onmouseout="this.style.transform=''; this.style.boxShadow='0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05)';"
     >
   </a>
-  <p style="margin-top: 1.5rem;"><em>Empowering maternal health through open-source AI technology</em></p>
+  <p style="margin-top: 1.5rem;"><em>Experience Ester's intuitive chat interface</em></p>
 </div>
-
-## 🌟 About Ester
-
-Ester is an open-source AI companion designed to support individuals through all stages of maternal health. Starting with postpartum recovery, Ester provides personalized guidance by integrating with health wearables and offering evidence-based support.
-
-**Why Ester?**
-- 🤰 **Comprehensive Care**: From pregnancy to postpartum and beyond
-- 🔒 **Privacy-First**: Your health data stays yours
-- 🌍 **Accessible**: Designed for everyone, everywhere
-- 🤖 **AI-Powered**: Evidence-based, personalized support
 
 ## 📋 Table of Contents
 
