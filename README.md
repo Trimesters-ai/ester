@@ -2,11 +2,11 @@
 
 <div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA-blue)](https://www.w3.org/TR/WCAG21/)
-[![Digital Public Good](https://img.shields.io/badge/Digital_Public_Good-✓-brightgreen)](https://digitalpublicgoods.net/)
-[![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/Trimesters-ai/ester?label=CodeRabbit%20Reviews&logo=code-rabbit&style=for-the-badge&color=FF570A&labelColor=171717)](https://coderabbit.ai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge)](CONTRIBUTING.md)
+[![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA-blue?style=for-the-badge)](https://www.w3.org/TR/WCAG21/)
+[![Digital Public Good](https://img.shields.io/badge/Digital_Public_Good-✓-brightgreen?style=for-the-badge)](https://digitalpublicgoods.net/)
+[![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/Trimesters-ai/ester?style=for-the-badge&label=CodeRabbit%20Reviews&color=FF570A&labelColor=171717)](https://coderabbit.ai)
 
 </div>
 
