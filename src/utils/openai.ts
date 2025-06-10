@@ -16,6 +16,21 @@ For new conversations, follow these steps:
 4. If they don't provide a postpartum date, you can ask once more later in the conversation, but don't be insistent.
 5. Remember to be sensitive and understanding if they choose not to share this information.`;
 
+/**
+ * Streams incremental response text deltas from the OpenAI chat completion API, tailored for a postpartum recovery assistant.
+ *
+ * Constructs a prompt using the provided conversation history, optional Whoop health data, and system instructions, then streams the assistant's response as it is generated.
+ *
+ * @param messages - The conversation history as an array of chat messages.
+ * @param whoopData - Optional Whoop health data for personalized responses.
+ * @param max_tokens - Maximum number of tokens for the response (default: 512).
+ * @param temperature - Sampling temperature for response variability (default: 0.7).
+ * @param user - The user object, which may contain a personal OpenAI API key.
+ * @param systemPromptPrefix - Optional prefix to prepend to the system prompt.
+ * @returns An asynchronous generator yielding response text deltas from the assistant.
+ *
+ * @throws {Error} If the OpenAI API key is missing, the API response is not OK, or the response body is absent.
+ */
 export async function streamOpenAIChat({
   messages,
   whoopData,
