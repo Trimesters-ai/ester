@@ -7,7 +7,7 @@
 
 <div align="center">
   <a href="https://ester.chat" target="_blank">
-    <img src="assets/ester-preview.png" alt="Ester App Preview" width="800">
+    <img src="assets/images/ester-screenshot-chat.png" alt="Ester Chat Interface" width="800">
   </a>
   <p><em>Empowering maternal health through open-source AI technology</em></p>
 </div>
